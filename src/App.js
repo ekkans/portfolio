@@ -17,50 +17,16 @@ import Helmet from 'react-helmet';
 import './App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
   render() {
     return (
       <div>
-        <Helmet title="Application title" />
-        <Navbar color="inverse" inverse toggleable>
-          <NavbarToggler right onClick={this.toggle} />
-          <NavbarBrand href="/">Logo</NavbarBrand>
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/">Link</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+        <Helmet title="Sébastien Bourdu - Freelance Web Developer and UX Designer | Portfolio" />
         <Jumbotron>
           <Container>
             <Row>
               <Col>
-                <h1>Welcome here</h1>
-                <p>
-                  <Button
-                    tag="a"
-                    color="primary"
-                    size="large"
-                    href="/"
-                    target="_blank"
-                  >
-                    A button
-                  </Button>
-                </p>
+                <h1>Hi, I'm Sébastien Bourdu</h1>
+                <h4>Freelance Web Developer and UX Designer</h4>
               </Col>
             </Row>
           </Container>
