@@ -3014,9 +3014,6 @@ tbody.collapse.show {
   margin-bottom: 0;
   border-left: 0; }
 
-.card-img {
-  border-radius: calc(0.25rem - 1px); }
-
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -3025,26 +3022,32 @@ tbody.collapse.show {
   left: 0;
   padding: 1.25rem; }
 
+.card-img {
+  width: 100%;
+  border-radius: calc(0.25rem - 1px); }
+
 .card-img-top {
+  width: 100%;
   border-top-right-radius: calc(0.25rem - 1px);
   border-top-left-radius: calc(0.25rem - 1px); }
 
 .card-img-bottom {
+  width: 100%;
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px); }
 
 @media (min-width: 576px) {
   .card-deck {
     display: flex;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
     .card-deck .card {
       display: flex;
       flex: 1 0 0;
-      flex-direction: column; }
-      .card-deck .card:not(:first-child) {
-        margin-left: 15px; }
-      .card-deck .card:not(:last-child) {
-        margin-right: 15px; } }
+      flex-direction: column;
+      margin-right: 15px;
+      margin-left: 15px; } }
 
 @media (min-width: 576px) {
   .card-group {
@@ -3080,9 +3083,16 @@ tbody.collapse.show {
     column-count: 3;
     column-gap: 1.25rem; }
     .card-columns .card {
-      display: inline-block;
-      width: 100%;
-      margin-bottom: 0.75rem; } }
+      -webkit-column-break-inside: avoid;
+      break-after: always;
+      break-inside: avoid;
+      -webkit-column-break-after: always;
+      margin-bottom: 0.75rem;
+      page-break-after: always;
+      page-break-inside: avoid;
+      width: 100%; }
+      .card-columns .card:first-of-type:last-of-type {
+        display: inline-block; } }
 
 .breadcrumb {
   padding: 0.75rem 1rem;
@@ -3238,14 +3248,14 @@ a.badge:focus, a.badge:hover {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #eceeef;
+  background-color: transparent;
   border-radius: 0.3rem; }
   @media (min-width: 576px) {
     .jumbotron {
       padding: 4rem 2rem; } }
 
 .jumbotron-hr {
-  border-top-color: #d0d5d8; }
+  border-top-color: transparent; }
 
 .jumbotron-fluid {
   padding-right: 0;
@@ -5980,3 +5990,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+body {
+  background: url(/images/background-1d79603f.png);
+  border-top: solid 5px #3b3b3b;
+  color: #3b3b3b; }
+
+.container-fluid {
+  max-width: 860px; }
