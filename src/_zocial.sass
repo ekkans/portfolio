@@ -11,8 +11,8 @@
   font-family: 'zocial'
   font-style: normal
   font-weight: normal
-  src: font-url("/fonts/zocial-regular-webfont.eot")
-  src: font-url("/fonts/zocial-regular-webfont.eot?#iefix") format("embedded-opentype"), font-url("/fonts/zocial-regular-webfont.woff") format("woff"), font-url("/fonts/zocial-regular-webfont.ttf") format("truetype"), font-url("/fonts/zocial-regular-webfont.svg#ZocialRegular") format("svg")
+  src: url("/fonts/zocial-regular-webfont.eot")
+  src: url("/fonts/zocial-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/zocial-regular-webfont.woff") format("woff"), url("/fonts/zocial-regular-webfont.ttf") format("truetype"), url("/fonts/zocial-regular-webfont.svg#ZocialRegular") format("svg")
   unicode-range: U+0 -U + 10FFFF
 
 // Button structure
@@ -110,7 +110,6 @@ a.zocial
 
 // Adjustments for light background buttons
 
-.zocial.bitcoin,
 .zocial.cloudapp,
 .zocial.dropbox,
 .zocial.email,
@@ -305,6 +304,7 @@ a.zocial
 
 .zocial.github:before
   content: "\E046"
+  color: black
 
 .zocial.gmail:before
   content: "\E04C"

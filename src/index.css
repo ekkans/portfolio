@@ -6003,8 +6003,8 @@ body {
   font-family: 'zocial';
   font-style: normal;
   font-weight: normal;
-  src: font-url("/fonts/zocial-regular-webfont.eot");
-  src: font-url("/fonts/zocial-regular-webfont.eot?#iefix") format("embedded-opentype"), font-url("/fonts/zocial-regular-webfont.woff") format("woff"), font-url("/fonts/zocial-regular-webfont.ttf") format("truetype"), font-url("/fonts/zocial-regular-webfont.svg#ZocialRegular") format("svg");
+  src: url("/fonts/zocial-regular-webfont.eot");
+  src: url("/fonts/zocial-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/zocial-regular-webfont.woff") format("woff"), url("/fonts/zocial-regular-webfont.ttf") format("truetype"), url("/fonts/zocial-regular-webfont.svg#ZocialRegular") format("svg");
   unicode-range: U+0 -U10FFFF; }
 
 .zocial,
@@ -6093,7 +6093,6 @@ a.zocial {
   background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, transparent 50%, rgba(0, 0, 0, 0.1));
   background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, transparent 50%, rgba(0, 0, 0, 0.1)); }
 
-.zocial.bitcoin,
 .zocial.cloudapp,
 .zocial.dropbox,
 .zocial.email,
@@ -6281,7 +6280,8 @@ a.zocial {
   content: "\E013"; }
 
 .zocial.github:before {
-  content: "\E046"; }
+  content: "\E046";
+  color: black; }
 
 .zocial.gmail:before {
   content: "\E04C";
@@ -6761,11 +6761,11 @@ b, strong, .card-subtitle {
   box-shadow: inset 0px 0px 18px 0px #CCC;
   border-radius: 0 !important; }
 
-@media (min-width: 600px) {
+@media (min-width: 350px) {
   .card-columns {
     column-count: 2 !important; } }
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
   .card-columns {
     column-count: 3 !important; } }
 

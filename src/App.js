@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 import {
-  Card, CardImg, CardText, CardBlock, CardLink,
+  Card, CardText, CardBlock,
   CardTitle, CardSubtitle,
   Container, Row, Col,
-  Jumbotron,
-  Button
+  Jumbotron
 } from 'reactstrap';
-import Helmet from 'react-helmet';
 import './App.css';
 
 class App extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
+    ReactGA.initialize('UA-4052025-2');
+    ReactGA.set({ page: window.location.pathname + window.location.search });
+    ReactGA.pageview(window.location.pathname + window.location.search);
     let featuredProjects = [
       {
         title: 'Tour en tête',
@@ -167,7 +169,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Helmet title="Sébastien Bourdu - Freelance Web Developer and UX Designer | Portfolio" />
         <Jumbotron className="mb-0 pb-3">
           <Container fluid>
             <Row className="text-center my-3">
@@ -202,7 +203,7 @@ class App extends Component {
                 <Card block outline color="secondary" className="my-3">
                   <CardBlock className="py-0">
                     <Row className="text-center justify-content-md-center">
-                      <Col md="2">
+                      <Col xs="3">
                         <img src="/images/sebastien-bourdu-9ad5ff9c.jpg" alt="Sébastien Bourdu" className="rounded" />
                       </Col>
                       <Col md="auto">
