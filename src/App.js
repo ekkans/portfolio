@@ -188,7 +188,7 @@ class App extends Component {
             <div className="card-columns card-columns-lg pt-3">
               {this.state.featuredProjects.map((project) =>
                 <Card className="mb-3">
-                  <img width="100%" src={project.image} alt='Project picture' />
+                  <img className='card-img-top img-fluid' src={project.image} alt='Project picture' />
                   <CardBlock>
                     <CardSubtitle className="pb-2">{project.subtitle}</CardSubtitle>
                     <CardText>{project.text}</CardText>
@@ -237,7 +237,7 @@ class App extends Component {
             <div className="card-columns pt-3">
               {this.state.projects.map((project) =>
                 <Card className="mb-3">
-                  <img width="100%" src={project.image} alt='Project picture' />
+                  <img className='card-img-top img-fluid' src={project.image} alt='Project picture' />
                   <CardBlock>
                     <CardSubtitle className="mb-2">{project.title}</CardSubtitle>
                     <CardText>{project.text}</CardText>

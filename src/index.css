@@ -530,6 +530,10 @@ mark,
 .blockquote-reverse .blockquote-footer::after {
   content: "\00A0 \2014"; }
 
+.img-fluid {
+  width: 100%;
+  height: auto; }
+
 .container {
   position: relative;
   margin-left: auto;
@@ -1545,6 +1549,8 @@ mark,
 
 @media (min-width: 576px) {
   .card-columns .card {
+    break-inside: avoid; }
+  .card-columns-lg .card {
     display: flex; } }
 
 .jumbotron {
