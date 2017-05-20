@@ -65,7 +65,7 @@ class App extends Component {
       {
         title: 'Reporting 21',
         image: '/images/projects/reporting21-1495181568.svg',
-        text: "SaaS solution making your financial and extra-financial information actionable. I worked on the design, back-end (Rails), database (MySQL) and front-end (Angular)."
+        text: "SaaS solution making your financial and extra-financial information actionable. I worked on the design and the full stack (Rails, MySQL, Angular, etc)."
       },
       {
         title: 'Aéroports de Paris',
@@ -100,7 +100,7 @@ class App extends Component {
       {
         title: 'Frecious',
         image: '/images/projects/frecious-1495181568.png',
-        text: "My work: the shop by implementing Stripe and an e-commerce solution made with Rails and Angular"
+          text: "My work: the shop in JavaScript by implementing Stripe and an e-commerce solution made with Rails and Angular"
       },
       {
         title: 'MakeSense',
