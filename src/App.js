@@ -19,22 +19,21 @@ class App extends Component {
       {
         title: 'Tour en tête',
         subtitle: 'Web-documentary about the Tour de France for Radio France',
-        image: '/images/projects/tour-en-tete-838f4494.jpg',
+        iframe: 'https://player.vimeo.com/video/68294299?color=ffffff&title=0&byline=0&portrait=0',
         text: 'My work: interactive design, Rails, EaselJS, Backbone.js, Sass, CoffeeScript, PostgreSQL, Facebook API, etc.',
         linkHref: '',
         linkTitle: 'Check out the website'
       },
       {
-        title: 'Leeftr',
-        subtitle: 'Remote assistance community co-founded with 3 friends',
-        image: '/images/projects/leeftr-672cfa4c.jpg',
-        text: 'My work: Rails, Paypal, CoffeeScript, Backbone.js, Twitter Bootstrap, Sass, PostgreSQL, Heroku, AWS, etc.',
-        linkHref: '',
-        linkTitle: 'Check out the website'
+        title: 'DIY Manifesto',
+        subtitle: 'Web-documentary about Detroit and the Do It Yourself movement for Cinétévé, Mediapart, etc.',
+        // image: '/images/projects/diy-manifesto-1495181568.png',
+        iframe: 'https://player.vimeo.com/video/78603031?color=ffffff&title=0&byline=0&portrait=0',
+        text: 'My work: front-end and back-end (Rails, Twitter Bootstrap, SEO, etc)'
       },
       {
         title: 'Le magazine du Monde',
-        subtitle: 'I was in charge of redesigning the magazine website',
+        subtitle: 'I was in charge of redesigning the magazine website pages',
         image: '/images/projects/M-lemagazine-1495173620.svg',
         text: 'My work: UX and graphic design',
         linkHref: '',
@@ -43,9 +42,15 @@ class App extends Component {
     ]
     let projects = [
       {
+        title: 'Leeftr',
+        // image: '/images/projects/leeftr-672cfa4c.jpg',
+        iframe: 'https://player.vimeo.com/video/49225741?color=ffffff&title=0&byline=0&portrait=0',
+        text: 'Remote assistance community co-founded with 3 friends. My work: Rails, Paypal, Heroku, AWS, etc.',
+      },
+      {
         title: 'Artificial Intelligence',
         image: '/images/projects/samantha-1495181568.png',
-        text: "I like spending time exploring AI using Hubot, React and services like IBM Watson"
+        text: "I like spending time exploring AI using Hubot (Node.js), React and services like IBM Watson"
       },
       {
         title: 'Orange labs',
@@ -53,14 +58,9 @@ class App extends Component {
         text: 'I was an API evangelist at Orange labs (Paris) for 2 years (2008 - 2010). For example, I developed a mashup using Google maps, YouTube and Flickr.'
       },
       {
-        title: 'DIY Manifesto',
-        image: '/images/projects/diy-manifesto-1495181568.png',
-        text: 'Web-documentary about Detroit and the Do It Yourself movement. My work: front-end and back-end'
-      },
-      {
-        title: "iko, the pupil's best friend",
-        image: '/images/projects/iko-f776cf2e.png',
-        text: "We won a World Summit Youth Award for this project we made at the school of Gobelins."
+        title: 'Moringa',
+        image: '/images/projects/moringa-1495181568.png',
+        text: "E-commerce website made with Ruby on Rails and Paypal"
       },
       {
         title: 'Reporting 21',
@@ -79,7 +79,8 @@ class App extends Component {
       },
       {
         title: 'Arduin\'Hockey',
-        image: '/images/projects/arduin-hockey-1495181568.jpg',
+        // image: '/images/projects/arduin-hockey-1495181568.jpg',
+        iframe: 'https://player.vimeo.com/video/12275133?color=ffffff&title=0&byline=0&portrait=0',
         text: "Mix of pong and air hockey controlled by hand gestures with Arduino."
       },
       {
@@ -88,9 +89,10 @@ class App extends Component {
         text: "My work: graphic design, ux design and code with Sails.js (Node.js) and MongoDB"
       },
       {
-        title: 'Moringa',
-        image: '/images/projects/moringa-1495181568.png',
-        text: "E-commerce website made with Ruby on Rails and Paypal"
+        title: "iko, the pupil's best friend",
+        // image: '/images/projects/iko-f776cf2e.png',
+        iframe: 'https://player.vimeo.com/video/12400412?color=ffffff&title=0&byline=0&portrait=0',
+        text: "We won a World Summit Youth Award for this project made at the school of Gobelins."
       },
       {
         title: 'Les Exaltés',
@@ -105,7 +107,7 @@ class App extends Component {
       {
         title: 'MakeSense',
         image: '/images/projects/makesense-0b0d0f36.jpg',
-        text: 'Social Business Community. I worked on 3 different versions of the website as a web developer and designer.'
+          text: 'Social Business Community. I worked on 3 different versions of the website as a web developer and designer. I also worked on a community website for Suez Environnement.'
       },
       // {
       //   title: 'Soufflet Group',
@@ -122,11 +124,11 @@ class App extends Component {
       //   image: '/images/projects/thima-14a02610.jpg',
       //   text: 'I developed Thima with Jocelyn Lecamus for Julie Gombert and Faustine Clavert. It is a web documentary about water issues in Thailand.'
       // },
-      {
-        title: 'Comme des garçons',
-        image: '/images/projects/cdg-62e33569.jpg',
-        text: 'I developed a website for the fashion company Comme des garçons.'
-      },
+      // {
+      //   title: 'Comme des garçons',
+      //   image: '/images/projects/cdg-62e33569.jpg',
+      //   text: 'I developed a website for the fashion company Comme des garçons.'
+      // },
       // {
       //   title: 'Wiithaa',
       //   image: '/images/projects/wiithaa-d050f2cc.jpg',
@@ -145,7 +147,17 @@ class App extends Component {
       {
         title: 'Alumnis from Gobelins',
         image: '/images/projects/rag-8521f81f.png',
-        text: "I helped in the front-end development of the website."
+        text: "I helped in the front-end development of the website. I also worked in the R&D center of the school on two projects."
+      },
+      {
+        title: 'Super Social Movie',
+        iframe: 'https://player.vimeo.com/video/67077393?color=ffffff&title=0&byline=0&portrait=0',
+        text: "Facebook application made with Make Me Pulse and JWT for Crunch and Norman. My work: back-end and the front-end JavaScript"
+      },
+      {
+        title: 'Charities donations',
+        image: '/images/projects/doog-1495181568.png',
+        text: "I worked on a smartphone prototype using Ionic and Angular."
       },
       {
         title: 'Icarus dream',
@@ -188,7 +200,14 @@ class App extends Component {
             <div className="card-columns card-columns-lg pt-3">
               {this.state.featuredProjects.map((project) =>
                 <Card className="mb-3">
-                  <img className='card-img-top img-fluid' src={project.image} alt='Project picture' />
+                  {project.image &&
+                    <img className='card-img-top img-fluid' src={project.image} alt='Project picture' />
+                  }
+                  {project.iframe &&
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe className="embed-responsive-item" src={project.iframe} allowFullScreen></iframe>
+                    </div>
+                  }
                   <CardBlock>
                     <CardSubtitle className="pb-2">{project.subtitle}</CardSubtitle>
                     <CardText>{project.text}</CardText>
@@ -212,13 +231,13 @@ class App extends Component {
                         <CardText>
                           <ul className="list-inline mt-3 small">
                             <li className="list-inline-item">
-                              <a className="zocial linkedin" href="http://linkedin.com/in/sebastienbourdu/" target="_blank">See my CV on LinkedIn</a>
+                              <a className="zocial linkedin" href="https://linkedin.com/in/sebastienbourdu/" target="_blank">See my CV on LinkedIn</a>
                             </li>
                             <li className="list-inline-item">
-                              <a className="zocial icon github" href="http://github.com/ekkans" target="_blank">Fork me on Github</a>
+                              <a className="zocial icon github" href="https://github.com/ekkans" target="_blank">Fork me on Github</a>
                             </li>
                             <li className="list-inline-item">
-                              <a className="zocial icon facebook" href="http://www.facebook.com/ekkans" target="_blank">Follow me on Facebook</a>
+                              <a className="zocial icon facebook" href="https://www.facebook.com/ekkans" target="_blank">Follow me on Facebook</a>
                             </li>
                             <li className="list-inline-item">
                               <a className="zocial icon twitter" href="https://twitter.com/ekkans" target="_blank">Follow ekkans on Twitter</a>
@@ -237,7 +256,14 @@ class App extends Component {
             <div className="card-columns pt-3">
               {this.state.projects.map((project) =>
                 <Card className="mb-3">
-                  <img className='card-img-top img-fluid' src={project.image} alt='Project picture' />
+                  {project.image &&
+                    <img className='card-img-top img-fluid' src={project.image} alt='Project picture' />
+                  }
+                  {project.iframe &&
+                    <div className="embed-responsive embed-responsive-16by9">
+                      <iframe className="embed-responsive-item" src={project.iframe} allowFullScreen></iframe>
+                    </div>
+                  }
                   <CardBlock>
                     <CardSubtitle className="mb-2">{project.title}</CardSubtitle>
                     <CardText>{project.text}</CardText>
